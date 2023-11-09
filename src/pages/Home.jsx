@@ -1,6 +1,7 @@
 import React from 'react'
-import user from '../images/user.png'
+import user from '../images/user.jpg'
 import { TypeAnimation } from 'react-type-animation'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -9,11 +10,11 @@ function Home() {
         <img src={user} alt="user" className='home__image' />
       </div>
       <div className='home__right'>
-        <p className='home__position'>Front-end Developer</p>
+        <p className='home__position'>Full-Stack Developer</p>
         <TypeAnimation 
           sequence={[
             "Welcome !!!",1000,
-            "AbdulMalik Akhzamov",2000
+            "Sanjar Fayzullaev",2000
           ]}
           speed={1}
           repeat={Infinity}
@@ -23,8 +24,8 @@ function Home() {
           My job is to build your website so that it is functional and user-friendly but at the same time attractive.
         </p>
         <div className='home__btn'>
-          <button className='home__btn-portfolio'>Portfolio</button>
-          <button className='home__btn-contact'>Contact</button>
+          <Link to={"/portfolio"} className='home__btn-portfolio'>Portfolio</Link>
+          <Link to={"/contact"} className='home__btn-contact'>Contact</Link>
         </div>
       </div>
     </div>

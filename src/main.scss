@@ -32,7 +32,7 @@ a {
 }
 
 .page {
-    height: calc(100vh - 195px);
+    margin-bottom: 50px;
 }
 
 .title {
@@ -324,9 +324,10 @@ a {
     }
 
     &__box {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // flex-wrap: wrap;
+        grid-gap: 30px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -334,8 +335,6 @@ a {
 
 .card {
     position: relative;
-    width: 475px;
-    height: 270px;
     overflow: hidden;
 
     &:hover .card__content {

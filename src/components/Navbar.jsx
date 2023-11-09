@@ -12,7 +12,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav__list ms-auto">
             <NavLink to="/" className={({isActive})=> isActive ? "nav__link active" : "nav__link"}>Home</NavLink>
-            <NavLink to="/skills" className={({isActive})=> isActive ? "nav__link active" : "nav__link"}>Front-end skills</NavLink>
+            <NavLink to="/skills" className={({isActive})=> isActive ? "nav__link active" : "nav__link"}>Full-Stack skills</NavLink>
             <NavLink to="/portfolio" className={({isActive})=> isActive ? "nav__link active" : "nav__link"}>Portfolio </NavLink>
             <NavLink to="/contact" className={({isActive})=> isActive ? "nav__link active" : "nav__link"}>Contact</NavLink>
           </Nav>

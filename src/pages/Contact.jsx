@@ -30,7 +30,7 @@ function Contact() {
           <div className="contact__info">
             <Link to={"tel:+998991234567"} className="contact__link">
               <GiSmartphone />
-              <span>+998 99 123 45 67</span>
+              <span>+998 99 747 97 27</span>
             </Link>
             <Link to={"#!"} className="contact__link">
               <BiMap />
@@ -38,7 +38,7 @@ function Contact() {
             </Link>
             <Link to={"mailto:example@gmail.com"} className="contact__link">
               <MdOutlineEmail />
-              <span>example@gmail.com</span>
+              <span>sanjarfayzullaev99@gmail.com</span>
             </Link>
           </div>
           <form onSubmit={onSubmit} className="contact__form">
